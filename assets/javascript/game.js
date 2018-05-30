@@ -1,5 +1,4 @@
 // Global Variables
-//==============================================
 // Arrays and variables for holding data
 
 var wordOptions = ["queen", "pinkfloyd", "ledzeppelin", "boston"];
@@ -96,7 +95,6 @@ function roundComplete() {
 }
 
 // Main Process
-//==============================================
 startGame();
 
 // Register key clicks 
