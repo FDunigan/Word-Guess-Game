@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-6" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="jumbotron">
+        <h1>Hangman!</h1>
+        <p>Name that Band!</p>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Guess the band:</h3>
+        </div>
+        <div class="panel-body">
+            <h2 id="wordGuess">_ _ _ _ _</h2>
+        </div>
+    </div>
+    <br>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Wrong Letters: <span id="wrongGuesses"></span>
+        </div>
+    </div>  
+    <br>  
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Guesses Left: <span id="numGuesses">10</span> 
+        </div>
+    </div>
+    <br>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Win Counter: <span id="winCounter">0</span> 
+        </div>
+    </div>
+    <br>
+
+    <div class="panel panel-default">
+        <div class="panel-body">
+            Loss Counter: <span id="lossCounter">0</span> 
+        </div>
+    </div>
+
+</div>
+
+<script src="assets/javascript/game.js"></script>
+
+</body>
+
+</body>
+</html>
