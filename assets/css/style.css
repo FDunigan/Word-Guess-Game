@@ -7,7 +7,7 @@ body {
 }
 
 .jumbotron {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Amatic SC', cursive;
     text-align: center;
     background: #020258;
     color: rgb(180, 8, 8);
@@ -18,27 +18,33 @@ body {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 80px;
 }
 
 .panel-title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Amatic SC', cursive;
     text-align: center;
     color: rgb(180, 8, 8);
     border: dotted;
+    font-size: 50px;
 }
 
 .panel-first {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Amatic SC', cursive;
     text-align: center;
     color: rgb(180, 8, 8);
-    border: dotted;
+}
+
+#wordGuess {
+    font-weight: bold;
+    font-size: 60px;
 }
 
 .panel-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Amatic SC', cursive;
     text-align: center;
     color: rgb(180, 8, 8);
     border: dotted;
     border-color: rgb(180, 8, 8);
+    font-size: 35px;
 }
