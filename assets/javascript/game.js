@@ -1,7 +1,7 @@
 // Global Variables
 // Arrays and variables for holding data
 
-var wordOptions = ["queen", "pinkfloyd", "ledzeppelin", "boston"];
+var wordOptions = ["queen", "pinkfloyd", "ledzeppelin", "boston",];
 var selectedWord = "";
 var lettersinWord = [];
 var numBlanks = 0;
@@ -12,6 +12,13 @@ var wrongLetters = [];
 var winCounter = 0;
 var lossCounter = 0;
 var guessesLeft = 10;
+
+// Audio files
+var ledZeppelin = new Audio("http://ledzeppelin.alexreisner.com/sound/isong.mp3");
+var pinkfloyd = new Audio()
+var boston = new Audio()
+var queen = new Audio()
+var loser = new Audio("http://www.qwizx.com/gssfx/usa/tpirhorns.wav");
 
 // Functions
 //==============================================
@@ -78,6 +85,7 @@ function roundComplete() {
     if (lettersinWord.toString() == blanksAndSuccesses.toString()) {
         winCounter++;
         alert("You Won!");
+        ledZeppelin.play();
 
         document.getElementById("winCounter").innerHTML = winCounter;
 
@@ -87,6 +95,7 @@ function roundComplete() {
     else if (guessesLeft == 0) {
         lossCounter++;
         alert("You lost!");
+        loser.play();
 
         document.getElementById("lossCounter").innerHTML = lossCounter;
 
@@ -95,6 +104,7 @@ function roundComplete() {
 }
 
 // Main Process
+
 startGame();
 
 // Register key clicks 
@@ -102,7 +112,6 @@ document.onkeyup = function(event) {
     var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
     checkLetters(letterGuessed);
     roundComplete();
-
 
     console.log(letterGuessed);
 }
