@@ -1,5 +1,5 @@
 body {
-    background: #020258;
+    background: rgb(151, 37, 151);
 }
 
 .container {
@@ -9,22 +9,22 @@ body {
 .jumbotron {
     font-family: 'Amatic SC', cursive;
     text-align: center;
-    background: #020258;
-    color: rgb(180, 8, 8);
+    background: rgb(245, 63, 8);
+    color: rgb(31, 216, 198);
     border-right: dashed;
     border-left: dashed;
     border-bottom: dashed;
-    border-color: rgb(180, 8, 8);
+    border-color: rgb(31, 216, 198);
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 60px;
 }
 
 .panel-title {
     font-family: 'Amatic SC', cursive;
     text-align: center;
-    color: rgb(180, 8, 8);
+    color: rgb(31, 216, 198);
     border: dashed;
     font-size: 43px;
 }
@@ -32,7 +32,7 @@ h1 {
 .panel-first {
     font-family: 'Amatic SC', cursive;
     text-align: center;
-    color: rgb(180, 8, 8);
+    color: rgb(31, 216, 198);
 }
 
 #wordGuess {
@@ -43,8 +43,8 @@ h1 {
 .panel-body {
     font-family: 'Amatic SC', cursive;
     text-align: center;
-    color: rgb(180, 8, 8);
+    color: rgb(31, 216, 198);
     border: dashed;
-    border-color: rgb(180, 8, 8);
+    border-color: rgb(31, 216, 198);
     font-size: 35px;
 }

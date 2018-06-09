@@ -1,6 +1,3 @@
-// Global Variables
-// Arrays and variables for holding data
-
 var wordOptions = ["queen", "pinkfloyd", "ledzeppelin", "boston",];
 var selectedWord = "";
 var lettersinWord = [];
@@ -8,37 +5,37 @@ var numBlanks = 0;
 var blanksAndSuccesses = [];
 var wrongLetters = [];
 
-// Game counters
 var winCounter = 0;
 var lossCounter = 0;
 var guessesLeft = 10;
 
-// Audio files
 var ledZeppelin = new Audio("http://ledzeppelin.alexreisner.com/sound/isong.mp3");
-var pinkfloyd = new Audio()
-var boston = new Audio()
-var queen = new Audio()
+var pinkFloyd = new Audio("C:/Users/Foster/Downloads/Pink Floyd - Another Brick In The Wall (part 2).mp3");
+var boston = new Audio("C:/Users/Foster/Downloads/Boston-Smokin (1).mp3")
+var queen = new Audio("C:/Users/Foster/Downloads/Queen -  Bicycle Race.mp3")
 var loser = new Audio("http://www.qwizx.com/gssfx/usa/tpirhorns.wav");
 
-// Functions
-//==============================================
+var music = {
+ledzeppelin: ledZeppelin,
+boston: boston,
+queen: queen,
+pinkfloyd: pinkFloyd
 
+}
+console.log(music)
 function startGame () {
     selectedWord = wordOptions[Math.floor(Math.random() * wordOptions.length)];
     lettersinWord = selectedWord.split("");
     numBlanks = lettersinWord.length;
 
-    // Reset
     guessesLeft = 10;
     wrongLetters = [];
     blanksAndSuccesses = [];
 
-    // Populate the correct number of blanks
     for (var i = 0; i < numBlanks; i++) {
         blanksAndSuccesses.push("_");
     }
 
-    // Change HTML to reflect each round 
     document.getElementById("wordGuess").innerHTML = blanksAndSuccesses.join("  ");
     document.getElementById("numGuesses").innerHTML = guessesLeft;
     document.getElementById("winCounter").innerHTML = winCounter;
@@ -85,8 +82,11 @@ function roundComplete() {
     if (lettersinWord.toString() == blanksAndSuccesses.toString()) {
         winCounter++;
         alert("You Won!");
-        ledZeppelin.play();
-
+        // console.log(selectedWord)
+        // console.log(music)
+        // console.log(music.selectedWord)
+        music[selectedWord].play();
+      
         document.getElementById("winCounter").innerHTML = winCounter;
 
         startGame();
@@ -103,11 +103,8 @@ function roundComplete() {
     }
 }
 
-// Main Process
-
 startGame();
 
-// Register key clicks 
 document.onkeyup = function(event) {
     var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
     checkLetters(letterGuessed);
