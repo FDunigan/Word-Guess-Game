@@ -10,9 +10,9 @@ var lossCounter = 0;
 var guessesLeft = 10;
 
 var ledZeppelin = new Audio("http://ledzeppelin.alexreisner.com/sound/isong.mp3");
-var pinkFloyd = new Audio("C:/Users/Foster/Downloads/Pink Floyd - Another Brick In The Wall (part 2).mp3");
-var boston = new Audio("C:/Users/Foster/Downloads/Boston-Smokin (1).mp3");
-var queen = new Audio("C:/Users/Foster/Downloads/Queen -  Bicycle Race.mp3");
+var pinkFloyd = new Audio("assets/images/Pink Floyd - Another Brick In The Wall (part 2).mp3");
+var boston = new Audio("assets/images/Boston-Smokin (1).mp3");
+var queen = new Audio("assets/images/Queen -  Bicycle Race.mp3");
 var loser = new Audio("http://www.qwizx.com/gssfx/usa/tpirhorns.wav");
 
 var music = {
