@@ -2,4 +2,4 @@
 
 
 
-[Click to get started!](fdunigan.github.io/Word-Guess-Game)
+[Click to get started!](https://fdunigan.github.io/Word-Guess-Game/)
