@@ -1,4 +1,4 @@
-# Hangman Trivia 
+# Hangman Trivia (JavaScript)
 
 
 
